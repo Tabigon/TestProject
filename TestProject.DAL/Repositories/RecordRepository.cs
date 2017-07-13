@@ -13,7 +13,7 @@ namespace TestProject.DAL.Repositories
             _context = context;
         }
 
-        public void Add(Record record)
+        public void AddRecord(Record record)
         {
             if (record != null)
             {
