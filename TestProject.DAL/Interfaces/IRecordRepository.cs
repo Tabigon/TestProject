@@ -1,4 +1,5 @@
-﻿using TestProject.Domain;
+﻿using System.Collections.Generic;
+using TestProject.Domain;
 
 namespace TestProject.DAL.Interfaces
 {

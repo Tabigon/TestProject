@@ -1,4 +1,5 @@
-﻿using TestProject.BL.DTO;
+﻿using System.Collections.Generic;
+using TestProject.BL.DTO;
 
 namespace TestProject.BL.Interfaces
 {
