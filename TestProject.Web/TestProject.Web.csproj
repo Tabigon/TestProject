@@ -273,11 +273,11 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\TestProject.BL\TestProject.BL.csproj">
+    <ProjectReference Include="..\TestProject.BL\TestProject.BL.csproj">
       <Project>{5D8B070B-3923-4E88-8BD9-41A90BA0A89D}</Project>
       <Name>TestProject.BL</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\TestProject.DAL\TestProject.DAL.csproj">
+    <ProjectReference Include="..\TestProject.DAL\TestProject.DAL.csproj">
       <Project>{172B4FEB-008E-426B-9D82-CF59F1DD3136}</Project>
       <Name>TestProject.DAL</Name>
     </ProjectReference>

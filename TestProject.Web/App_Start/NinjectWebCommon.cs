@@ -1,6 +1,4 @@
 using TestProject.BL.Interfaces;
-using TestProject.DAL.Interfaces;
-using TestProject.DAL.Repositories;
 
 [assembly: WebActivatorEx.PreApplicationStartMethod(typeof(TestProject.Web.App_Start.NinjectWebCommon), "Start")]
 [assembly: WebActivatorEx.ApplicationShutdownMethodAttribute(typeof(TestProject.Web.App_Start.NinjectWebCommon), "Stop")]
@@ -17,6 +15,8 @@ namespace TestProject.Web.App_Start
     using System.Web.Http;
     using TestProject.Web.Infrastructure;
     using TestProject.BL.Services;
+    using TestProject.DAL.Interfaces;
+    using TestProject.DAL.Repositories;
 
     public static class NinjectWebCommon 
     {
