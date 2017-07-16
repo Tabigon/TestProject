@@ -4,14 +4,8 @@ namespace TestProject.Client
 {
     public class Record
     {
-        private string userName;
-        private string userRecord;
-
-        public Record()
-        {
-            userName = "";
-            userRecord = "";
-        }
+        private string userName = "";
+        private string userRecord = "";
 
         public void Create()
         {

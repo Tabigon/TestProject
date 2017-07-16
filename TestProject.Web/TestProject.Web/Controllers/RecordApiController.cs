@@ -6,6 +6,8 @@ using TestProject.BL.Interfaces;
 
 namespace TestProject.Web.Controllers
 {
+    // В целях демонстрации своих знаний я реализовал это приложение с использованием трехуровневой архитектуры и внедрением зависимостей
+    // но в случае подобной простоты реального приложения, разбивать его на уровни нецелесообразно
     public class RecordApiController : ApiController
     {
         private readonly IRecordService _recordService;
@@ -17,12 +19,14 @@ namespace TestProject.Web.Controllers
 
         public HttpResponseMessage PostRecord(RecordDTO record)
         {
+            if (!ModelState.IsValid)
+                return Request.CreateErrorResponse(HttpStatusCode.BadRequest, ModelState);
+
             try
             {
                 _recordService.AddRecord(record);
 
                 return Request.CreateResponse(HttpStatusCode.OK);
-
             }
             catch
             {
