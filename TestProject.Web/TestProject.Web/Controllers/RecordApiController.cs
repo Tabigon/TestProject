@@ -26,7 +26,7 @@ namespace TestProject.Web.Controllers
             }
             catch
             {
-                return Request.CreateErrorResponse(HttpStatusCode.BadRequest);
+                return Request.CreateErrorResponse(HttpStatusCode.BadRequest, ModelState);
             }
         }
     }
